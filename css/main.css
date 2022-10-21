@@ -53,8 +53,92 @@ address {
 }
 
 .container {
-  width: 100%;
+  width: 1280px;
+  height: 720px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.removed {
+  display: none;
+}
+
+.pre-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.sphere-container {
+  min-width: 1280px;
+  height: 720px;
+  display: flex;
+}
+@-webkit-keyframes sphere-size {
+  from {
+    scale: 0;
+  }
+  50% {
+    scale: 150%;
+    opacity: 100%;
+  }
+  90% {
+    opacity: 50%;
+  }
+  to {
+    scale: 0;
+    opacity: 0;
+  }
+}
+@keyframes sphere-size {
+  from {
+    scale: 0;
+  }
+  50% {
+    scale: 150%;
+    opacity: 100%;
+  }
+  90% {
+    opacity: 50%;
+  }
+  to {
+    scale: 0;
+    opacity: 0;
+  }
+}
+.sphere-container .sphere {
+  width: 1200px;
+  height: 1200px;
+  background: #1d569b;
+  border-radius: 50%;
+  margin: 0 auto;
+  align-self: center;
+  -webkit-animation: sphere-size 2s 1 ease-in-out;
+          animation: sphere-size 2s 1 ease-in-out;
+}
+
+.kostya-container {
+  position: relative;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+}
+
+.violet-cloud {
+  position: absolute;
+  align-self: flex-end;
+}
+
+.kostya-photo {
+  position: absolute;
+  top: 89.81px;
+  align-self: flex-end;
+}
+
+.hbday {
+  position: absolute;
+  top: 424.31px;
+  align-self: flex-end;
 }/*# sourceMappingURL=main.css.map */
