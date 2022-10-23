@@ -37,23 +37,249 @@
   }
 }
 
-.kostya-container {
-  position: relative;
+.kostya-section {
   height: 720px;
-  display: flex;
-  justify-content: center;
-}
-.violet-cloud {
-  position: absolute;
-  align-self: flex-end;
-}
-.kostya-photo {
-  position: absolute;
-  top: 89.81px;
-  align-self: flex-end;
-}
-.hbday{
-	position: absolute;
-	top: 424.31px;
-	align-self: flex-end;
+  background-color: #1d569b;
+
+  .kostya-content {
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .violet-cloud {
+    position: absolute;
+    align-self: flex-end;
+  }
+
+  .kostya-photo {
+    position: absolute;
+    top: 89.81px;
+    align-self: flex-end;
+  }
+  .gradient {
+    position: absolute;
+    width: 394px;
+    height: 407px;
+    top: 190px;
+    background: radial-gradient(
+      42.11% 39.31% at 50.15% 46.62%,
+      #3c4bd6 27.6%,
+      rgba(67, 142, 255, 0) 100%
+    );
+  }
+
+  .hbday {
+    position: absolute;
+    top: 424.31px;
+    align-self: flex-end;
+  }
+
+  @keyframes transparentConfetti {
+    from {
+      opacity: 1;
+    }
+    69% {
+      opacity: 0.2;
+    }
+    77% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .confetti {
+    position: absolute;
+    animation: transparentConfetti 2.97s infinite ease-in-out;
+  }
+  @keyframes dropDown {
+    from {
+      top: -240px;
+    }
+    90% {
+      top: 20px;
+    }
+
+    to {
+      top: 0px;
+    }
+  }
+
+  .stars {
+    position: relative;
+    width: 100%;
+    height: 143px;
+    z-index: 1;
+    animation: dropDown 1s 1 ease-in-out;
+
+    @keyframes blink {
+      from {
+        scale: 100%;
+      }
+      50% {
+        scale: 50%;
+      }
+      to {
+        scale: 100%;
+      }
+    }
+    .first-star {
+      position: absolute;
+      top: 156px;
+      left: 27px;
+      animation: blink 3s infinite ease-in-out;
+    }
+
+    .second-star {
+      position: absolute;
+      top: 69px;
+      left: 107px;
+      animation: blink 4s infinite ease-in-out;
+    }
+
+    .third-star {
+      position: absolute;
+      top: 140px;
+      left: 214px;
+      animation: blink 3s infinite ease-in-out;
+    }
+
+    .fourth-star {
+      position: absolute;
+      top: 39px;
+      left: 321px;
+      animation: blink 3.5s infinite ease-in-out;
+    }
+
+    .fifth-star {
+      position: absolute;
+      top: 93px;
+      left: 455px;
+      animation: blink 4s infinite ease-in-out;
+    }
+
+    .sixth-star {
+      position: absolute;
+      top: 167px;
+      left: 535px;
+      animation: blink 3s infinite ease-in-out;
+    }
+
+    .seventh-star {
+      position: absolute;
+      top: 63px;
+      left: 681px;
+      animation: blink 3.5s infinite ease-in-out;
+    }
+
+    .eighth-star {
+      position: absolute;
+      top: 155px;
+      right: 501px;
+      animation: blink 4s infinite ease-in-out;
+    }
+
+    .nineth-star {
+      position: absolute;
+      top: 63px;
+      right: 377px;
+      animation: blink 3s infinite ease-in-out;
+    }
+
+    .tenth-star {
+      position: absolute;
+      top: 182px;
+      right: 285px;
+      animation: blink 3.5s infinite ease-in-out;
+    }
+
+    .eleventh-star {
+      position: absolute;
+      top: 119px;
+      right: 142px;
+      animation: blink 3s infinite ease-in-out;
+    }
+
+    .twelvth-star {
+      position: absolute;
+      top: 57px;
+      right: 73px;
+      animation: blink 4s infinite ease-in-out;
+    }
+  }
+  @keyframes dropHat {
+    from {
+      top: -93px;
+    }
+
+    90% {
+      top: 20px;
+      transform: rotate(-10deg);
+    }
+
+    to {
+      top: 65px;
+      transform: rotate(9.22deg);
+    }
+  }
+  .bd-hat {
+    position: absolute;
+    z-index: 10;
+    top: 65px;
+    left: 605px;
+    transform: rotate(9.22deg);
+    animation: dropHat 1s 1 ease-in-out;
+  }
+  @keyframes leftOvalRising {
+    from {
+      top: 1000px;
+      left: -700px;
+    }
+    to {
+      top: 190px;
+      left: 0;
+    }
+  }
+  @keyframes rightOvalRising {
+    from {
+      top: 1000px;
+      right: -700px;
+    }
+
+    to {
+      top: 190px;
+      right: 0;
+    }
+  }
+  @keyframes circleRising {
+    from {
+      top: 1000px;
+    }
+
+    to {
+      top: 118px;
+    }
+  }
+  .blue-oval-left {
+    position: absolute;
+    top: 190px;
+    left: 0;
+    animation: leftOvalRising 1s 1 ease-in-out;
+  }
+  .blue-circle {
+    position: absolute;
+    top: 118px;
+    animation: circleRising 1s 1 ease-in-out;
+  }
+  .blue-oval-right {
+    position: absolute;
+    top: 190px;
+    right: 0;
+    animation: rightOvalRising 1s 1 ease-in-out;
+  }
 }

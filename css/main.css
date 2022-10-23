@@ -119,26 +119,320 @@ address {
           animation: sphere-size 2s 1 ease-in-out;
 }
 
-.kostya-container {
-  position: relative;
+.kostya-section {
+  height: 720px;
+  background-color: #1d569b;
+}
+.kostya-section .kostya-content {
   height: 720px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
-
-.violet-cloud {
+.kostya-section .violet-cloud {
   position: absolute;
   align-self: flex-end;
 }
-
-.kostya-photo {
+.kostya-section .kostya-photo {
   position: absolute;
   top: 89.81px;
   align-self: flex-end;
 }
-
-.hbday {
+.kostya-section .gradient {
+  position: absolute;
+  width: 394px;
+  height: 407px;
+  top: 190px;
+  background: radial-gradient(42.11% 39.31% at 50.15% 46.62%, #3c4bd6 27.6%, rgba(67, 142, 255, 0) 100%);
+}
+.kostya-section .hbday {
   position: absolute;
   top: 424.31px;
   align-self: flex-end;
+}
+@-webkit-keyframes transparentConfetti {
+  from {
+    opacity: 1;
+  }
+  69% {
+    opacity: 0.2;
+  }
+  77% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes transparentConfetti {
+  from {
+    opacity: 1;
+  }
+  69% {
+    opacity: 0.2;
+  }
+  77% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.kostya-section .confetti {
+  position: absolute;
+  -webkit-animation: transparentConfetti 2.97s infinite ease-in-out;
+          animation: transparentConfetti 2.97s infinite ease-in-out;
+}
+@-webkit-keyframes dropDown {
+  from {
+    top: -240px;
+  }
+  90% {
+    top: 20px;
+  }
+  to {
+    top: 0px;
+  }
+}
+@keyframes dropDown {
+  from {
+    top: -240px;
+  }
+  90% {
+    top: 20px;
+  }
+  to {
+    top: 0px;
+  }
+}
+.kostya-section .stars {
+  position: relative;
+  width: 100%;
+  height: 143px;
+  z-index: 1;
+  -webkit-animation: dropDown 1s 1 ease-in-out;
+          animation: dropDown 1s 1 ease-in-out;
+}
+@-webkit-keyframes blink {
+  from {
+    scale: 100%;
+  }
+  50% {
+    scale: 50%;
+  }
+  to {
+    scale: 100%;
+  }
+}
+@keyframes blink {
+  from {
+    scale: 100%;
+  }
+  50% {
+    scale: 50%;
+  }
+  to {
+    scale: 100%;
+  }
+}
+.kostya-section .stars .first-star {
+  position: absolute;
+  top: 156px;
+  left: 27px;
+  -webkit-animation: blink 3s infinite ease-in-out;
+          animation: blink 3s infinite ease-in-out;
+}
+.kostya-section .stars .second-star {
+  position: absolute;
+  top: 69px;
+  left: 107px;
+  -webkit-animation: blink 4s infinite ease-in-out;
+          animation: blink 4s infinite ease-in-out;
+}
+.kostya-section .stars .third-star {
+  position: absolute;
+  top: 140px;
+  left: 214px;
+  -webkit-animation: blink 3s infinite ease-in-out;
+          animation: blink 3s infinite ease-in-out;
+}
+.kostya-section .stars .fourth-star {
+  position: absolute;
+  top: 39px;
+  left: 321px;
+  -webkit-animation: blink 3.5s infinite ease-in-out;
+          animation: blink 3.5s infinite ease-in-out;
+}
+.kostya-section .stars .fifth-star {
+  position: absolute;
+  top: 93px;
+  left: 455px;
+  -webkit-animation: blink 4s infinite ease-in-out;
+          animation: blink 4s infinite ease-in-out;
+}
+.kostya-section .stars .sixth-star {
+  position: absolute;
+  top: 167px;
+  left: 535px;
+  -webkit-animation: blink 3s infinite ease-in-out;
+          animation: blink 3s infinite ease-in-out;
+}
+.kostya-section .stars .seventh-star {
+  position: absolute;
+  top: 63px;
+  left: 681px;
+  -webkit-animation: blink 3.5s infinite ease-in-out;
+          animation: blink 3.5s infinite ease-in-out;
+}
+.kostya-section .stars .eighth-star {
+  position: absolute;
+  top: 155px;
+  right: 501px;
+  -webkit-animation: blink 4s infinite ease-in-out;
+          animation: blink 4s infinite ease-in-out;
+}
+.kostya-section .stars .nineth-star {
+  position: absolute;
+  top: 63px;
+  right: 377px;
+  -webkit-animation: blink 3s infinite ease-in-out;
+          animation: blink 3s infinite ease-in-out;
+}
+.kostya-section .stars .tenth-star {
+  position: absolute;
+  top: 182px;
+  right: 285px;
+  -webkit-animation: blink 3.5s infinite ease-in-out;
+          animation: blink 3.5s infinite ease-in-out;
+}
+.kostya-section .stars .eleventh-star {
+  position: absolute;
+  top: 119px;
+  right: 142px;
+  -webkit-animation: blink 3s infinite ease-in-out;
+          animation: blink 3s infinite ease-in-out;
+}
+.kostya-section .stars .twelvth-star {
+  position: absolute;
+  top: 57px;
+  right: 73px;
+  -webkit-animation: blink 4s infinite ease-in-out;
+          animation: blink 4s infinite ease-in-out;
+}
+@-webkit-keyframes dropHat {
+  from {
+    top: -93px;
+  }
+  90% {
+    top: 20px;
+    transform: rotate(-10deg);
+  }
+  to {
+    top: 65px;
+    transform: rotate(9.22deg);
+  }
+}
+@keyframes dropHat {
+  from {
+    top: -93px;
+  }
+  90% {
+    top: 20px;
+    transform: rotate(-10deg);
+  }
+  to {
+    top: 65px;
+    transform: rotate(9.22deg);
+  }
+}
+.kostya-section .bd-hat {
+  position: absolute;
+  z-index: 10;
+  top: 65px;
+  left: 605px;
+  transform: rotate(9.22deg);
+  -webkit-animation: dropHat 1s 1 ease-in-out;
+          animation: dropHat 1s 1 ease-in-out;
+}
+@-webkit-keyframes leftOvalRising {
+  from {
+    top: 1000px;
+    left: -700px;
+  }
+  to {
+    top: 190px;
+    left: 0;
+  }
+}
+@keyframes leftOvalRising {
+  from {
+    top: 1000px;
+    left: -700px;
+  }
+  to {
+    top: 190px;
+    left: 0;
+  }
+}
+@-webkit-keyframes rightOvalRising {
+  from {
+    top: 1000px;
+    right: -700px;
+  }
+  to {
+    top: 190px;
+    right: 0;
+  }
+}
+@keyframes rightOvalRising {
+  from {
+    top: 1000px;
+    right: -700px;
+  }
+  to {
+    top: 190px;
+    right: 0;
+  }
+}
+@-webkit-keyframes circleRising {
+  from {
+    top: 1000px;
+  }
+  to {
+    top: 118px;
+  }
+}
+@keyframes circleRising {
+  from {
+    top: 1000px;
+  }
+  to {
+    top: 118px;
+  }
+}
+.kostya-section .blue-oval-left {
+  position: absolute;
+  top: 190px;
+  left: 0;
+  -webkit-animation: leftOvalRising 1s 1 ease-in-out;
+          animation: leftOvalRising 1s 1 ease-in-out;
+}
+.kostya-section .blue-circle {
+  position: absolute;
+  top: 118px;
+  -webkit-animation: circleRising 1s 1 ease-in-out;
+          animation: circleRising 1s 1 ease-in-out;
+}
+.kostya-section .blue-oval-right {
+  position: absolute;
+  top: 190px;
+  right: 0;
+  -webkit-animation: rightOvalRising 1s 1 ease-in-out;
+          animation: rightOvalRising 1s 1 ease-in-out;
 }/*# sourceMappingURL=main.css.map */
