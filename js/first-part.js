@@ -55,9 +55,7 @@ changeClass(refs.gradient, "gradient", "gradient-light", 9000);
 // * 6-th screen
 let trigger = 1;
 addListener(window, "click", firstScreenEnd, 9500);
-
 // ! video-part
-
 
 function disableElements(array) {
   for (let element of array) {
@@ -114,5 +112,6 @@ function firstScreenEnd() {
   refs.blueCircle.classList.add("circle-fall");
   refs.blueOvalRight.classList.add("oval-right-fall");
   removeElement(refs.ovals, "ovals", 960);
-  return window.removeEventListener("click", firstScreenEnd);
+  window.removeEventListener("click", firstScreenEnd);
+  removeElement(refs.kostyaSection, "kostya-section", 3000);
 }

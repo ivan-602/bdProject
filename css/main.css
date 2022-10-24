@@ -120,7 +120,7 @@ address {
 }
 
 .kostya-section {
-  height: 720px;
+  min-height: 720px;
   background-color: #1d569b;
 }
 .kostya-section .kostya-content {
