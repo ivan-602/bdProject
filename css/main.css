@@ -145,6 +145,13 @@ address {
   top: 190px;
   background: radial-gradient(42.11% 39.31% at 50.15% 46.62%, #3c4bd6 27.6%, rgba(67, 142, 255, 0) 100%);
 }
+.kostya-section .gradient-light {
+  position: absolute;
+  width: 394px;
+  height: 407px;
+  top: 190px;
+  background: radial-gradient(42.11% 39.31% at 50.15% 46.62%, rgba(173, 181, 249, 0.8) 27.6%, rgba(67, 142, 255, 0) 100%);
+}
 .kostya-section .hbday {
   position: absolute;
   top: 424.31px;
@@ -380,6 +387,26 @@ address {
     left: 0;
   }
 }
+@-webkit-keyframes leftOvalFall {
+  from {
+    top: 190px;
+    left: 0;
+  }
+  to {
+    top: 1000px;
+    left: -700px;
+  }
+}
+@keyframes leftOvalFall {
+  from {
+    top: 190px;
+    left: 0;
+  }
+  to {
+    top: 1000px;
+    left: -700px;
+  }
+}
 @-webkit-keyframes rightOvalRising {
   from {
     top: 1000px;
@@ -400,6 +427,26 @@ address {
     right: 0;
   }
 }
+@-webkit-keyframes rightOvalFall {
+  from {
+    top: 190px;
+    right: 0;
+  }
+  to {
+    top: 1000px;
+    right: -700px;
+  }
+}
+@keyframes rightOvalFall {
+  from {
+    top: 190px;
+    right: 0;
+  }
+  to {
+    top: 1000px;
+    right: -700px;
+  }
+}
 @-webkit-keyframes circleRising {
   from {
     top: 1000px;
@@ -416,6 +463,22 @@ address {
     top: 118px;
   }
 }
+@-webkit-keyframes circleFall {
+  from {
+    top: 118px;
+  }
+  to {
+    top: 1000px;
+  }
+}
+@keyframes circleFall {
+  from {
+    top: 118px;
+  }
+  to {
+    top: 1000px;
+  }
+}
 .kostya-section .blue-oval-left {
   position: absolute;
   top: 190px;
@@ -426,6 +489,7 @@ address {
 .kostya-section .blue-circle {
   position: absolute;
   top: 118px;
+  left: 336px;
   -webkit-animation: circleRising 1s 1 ease-in-out;
           animation: circleRising 1s 1 ease-in-out;
 }
@@ -435,4 +499,426 @@ address {
   right: 0;
   -webkit-animation: rightOvalRising 1s 1 ease-in-out;
           animation: rightOvalRising 1s 1 ease-in-out;
+}
+.kostya-section .oval-left-fall {
+  -webkit-animation: leftOvalFall 1s 1 ease-in-out;
+          animation: leftOvalFall 1s 1 ease-in-out;
+}
+.kostya-section .oval-right-fall {
+  -webkit-animation: rightOvalFall 1s 1 ease-in-out;
+          animation: rightOvalFall 1s 1 ease-in-out;
+}
+.kostya-section .circle-fall {
+  -webkit-animation: circleFall 1s 1 ease-in-out;
+          animation: circleFall 1s 1 ease-in-out;
+}
+@-webkit-keyframes first-logo-in {
+  from {
+    top: -177px;
+    left: -11px;
+  }
+  50% {
+    left: 370px;
+    top: 85px;
+  }
+  70% {
+    left: 350px;
+    top: 79px;
+  }
+  to {
+    left: 362px;
+    top: 82px;
+  }
+}
+@keyframes first-logo-in {
+  from {
+    top: -177px;
+    left: -11px;
+  }
+  50% {
+    left: 370px;
+    top: 85px;
+  }
+  70% {
+    left: 350px;
+    top: 79px;
+  }
+  to {
+    left: 362px;
+    top: 82px;
+  }
+}
+@-webkit-keyframes first-logo-out {
+  from {
+    left: 362px;
+    top: 82px;
+  }
+  to {
+    top: -177px;
+    left: -11px;
+  }
+}
+@keyframes first-logo-out {
+  from {
+    left: 362px;
+    top: 82px;
+  }
+  to {
+    top: -177px;
+    left: -11px;
+  }
+}
+@-webkit-keyframes second-logo-in {
+  from {
+    left: -290px;
+  }
+  50% {
+    left: 190px;
+  }
+  70% {
+    left: 175px;
+  }
+  to {
+    left: 182px;
+  }
+}
+@keyframes second-logo-in {
+  from {
+    left: -290px;
+  }
+  50% {
+    left: 190px;
+  }
+  70% {
+    left: 175px;
+  }
+  to {
+    left: 182px;
+  }
+}
+@-webkit-keyframes second-logo-out {
+  from {
+    left: 182px;
+  }
+  to {
+    left: 182px;
+    left: -290px;
+  }
+}
+@keyframes second-logo-out {
+  from {
+    left: 182px;
+  }
+  to {
+    left: 182px;
+    left: -290px;
+  }
+}
+@-webkit-keyframes third-logo-in {
+  from {
+    top: 730px;
+    left: -90px;
+  }
+  50% {
+    left: 75px;
+    top: 405px;
+  }
+  70% {
+    left: 76.2px;
+    top: 390px;
+  }
+  to {
+    left: 76.2px;
+    top: 400px;
+  }
+}
+@keyframes third-logo-in {
+  from {
+    top: 730px;
+    left: -90px;
+  }
+  50% {
+    left: 75px;
+    top: 405px;
+  }
+  70% {
+    left: 76.2px;
+    top: 390px;
+  }
+  to {
+    left: 76.2px;
+    top: 400px;
+  }
+}
+@-webkit-keyframes third-logo-out {
+  from {
+    left: 76.2px;
+    top: 400px;
+  }
+  to {
+    top: 730px;
+    left: -90px;
+  }
+}
+@keyframes third-logo-out {
+  from {
+    left: 76.2px;
+    top: 400px;
+  }
+  to {
+    top: 730px;
+    left: -90px;
+  }
+}
+@-webkit-keyframes fourth-logo-in {
+  from {
+    top: -185px;
+    left: 1160px;
+  }
+  50% {
+    left: 825px;
+    top: 105px;
+  }
+  70% {
+    left: 817px;
+    top: 98px;
+  }
+  to {
+    left: 818.53px;
+    top: 99px;
+  }
+}
+@keyframes fourth-logo-in {
+  from {
+    top: -185px;
+    left: 1160px;
+  }
+  50% {
+    left: 825px;
+    top: 105px;
+  }
+  70% {
+    left: 817px;
+    top: 98px;
+  }
+  to {
+    left: 818.53px;
+    top: 99px;
+  }
+}
+@-webkit-keyframes fourth-logo-out {
+  from {
+    left: 818.53px;
+    top: 99px;
+  }
+  to {
+    top: -185px;
+    left: 1160px;
+  }
+}
+@keyframes fourth-logo-out {
+  from {
+    left: 818.53px;
+    top: 99px;
+  }
+  to {
+    top: -185px;
+    left: 1160px;
+  }
+}
+@-webkit-keyframes fifth-logo-in {
+  from {
+    left: 1390px;
+  }
+  50% {
+    left: 960px;
+  }
+  70% {
+    left: 950px;
+  }
+  to {
+    left: 954px;
+  }
+}
+@keyframes fifth-logo-in {
+  from {
+    left: 1390px;
+  }
+  50% {
+    left: 960px;
+  }
+  70% {
+    left: 950px;
+  }
+  to {
+    left: 954px;
+  }
+}
+@-webkit-keyframes fifth-logo-out {
+  from {
+    left: 954px;
+  }
+  to {
+    left: 1390px;
+  }
+}
+@keyframes fifth-logo-out {
+  from {
+    left: 954px;
+  }
+  to {
+    left: 1390px;
+  }
+}
+@-webkit-keyframes sixth-logo-in {
+  from {
+    right: -345px;
+    top: 585px;
+  }
+  50% {
+    right: 165px;
+    top: 431px;
+  }
+  70% {
+    right: 155px;
+    top: 421px;
+  }
+  to {
+    right: 160.37px;
+    top: 426px;
+  }
+}
+@keyframes sixth-logo-in {
+  from {
+    right: -345px;
+    top: 585px;
+  }
+  50% {
+    right: 165px;
+    top: 431px;
+  }
+  70% {
+    right: 155px;
+    top: 421px;
+  }
+  to {
+    right: 160.37px;
+    top: 426px;
+  }
+}
+@-webkit-keyframes sixth-logo-out {
+  from {
+    right: 160.37px;
+    top: 426px;
+  }
+  to {
+    right: -345px;
+    top: 585px;
+  }
+}
+@keyframes sixth-logo-out {
+  from {
+    right: 160.37px;
+    top: 426px;
+  }
+  to {
+    right: -345px;
+    top: 585px;
+  }
+}
+.kostya-section .logos .first-logo {
+  position: absolute;
+  left: 362px;
+  top: 82px;
+  -webkit-animation: first-logo-in 1s 1 ease-in-out;
+          animation: first-logo-in 1s 1 ease-in-out;
+}
+.kostya-section .logos .second-logo {
+  position: absolute;
+  left: 182px;
+  top: 244.24px;
+  transform: rotate(-2.02deg);
+  -webkit-animation: second-logo-in 1s 1 ease-in-out;
+          animation: second-logo-in 1s 1 ease-in-out;
+}
+.kostya-section .logos .third-logo {
+  position: absolute;
+  left: 76.2px;
+  top: 400px;
+  -webkit-animation: third-logo-in 1s 1 ease-in-out;
+          animation: third-logo-in 1s 1 ease-in-out;
+}
+.kostya-section .logos .fourth-logo {
+  position: absolute;
+  left: 818.53px;
+  top: 99px;
+  -webkit-animation: fourth-logo-in 1s 1 ease-in-out;
+          animation: fourth-logo-in 1s 1 ease-in-out;
+}
+.kostya-section .logos .fifth-logo {
+  position: absolute;
+  left: 954px;
+  top: 242px;
+  -webkit-animation: fifth-logo-in 1s 1 ease-in-out;
+          animation: fifth-logo-in 1s 1 ease-in-out;
+}
+.kostya-section .logos .sixth-logo {
+  position: absolute;
+  right: 160.37px;
+  top: 426px;
+  -webkit-animation: sixth-logo-in 1s 1 ease-in-out;
+          animation: sixth-logo-in 1s 1 ease-in-out;
+}
+.kostya-section .logos .first-logo-mov {
+  -webkit-animation: first-logo-out 1s 1 ease-in-out;
+          animation: first-logo-out 1s 1 ease-in-out;
+}
+.kostya-section .logos .second-logo-mov {
+  -webkit-animation: second-logo-out 1s 1 ease-in-out;
+          animation: second-logo-out 1s 1 ease-in-out;
+}
+.kostya-section .logos .third-logo-mov {
+  -webkit-animation: third-logo-out 1s 1 ease-in-out;
+          animation: third-logo-out 1s 1 ease-in-out;
+}
+.kostya-section .logos .fourth-logo-mov {
+  -webkit-animation: fourth-logo-out 1s 1 ease-in-out;
+          animation: fourth-logo-out 1s 1 ease-in-out;
+}
+.kostya-section .logos .fifth-logo-mov {
+  -webkit-animation: fifth-logo-out 1s 1 ease-in-out;
+          animation: fifth-logo-out 1s 1 ease-in-out;
+}
+.kostya-section .logos .sixth-logo-mov {
+  -webkit-animation: sixth-logo-out 1s 1 ease-in-out;
+          animation: sixth-logo-out 1s 1 ease-in-out;
+}
+@-webkit-keyframes drop-frame {
+  from {
+    top: -640px;
+    opacity: 0;
+  }
+  to {
+    top: 97px;
+    opacity: 1;
+  }
+}
+@keyframes drop-frame {
+  from {
+    top: -640px;
+    opacity: 0;
+  }
+  to {
+    top: 97px;
+    opacity: 1;
+  }
+}
+.kostya-section .photo-frame {
+  position: absolute;
+  left: 331px;
+  top: 97px;
+  z-index: 2;
+  opacity: 1;
+  -webkit-animation: drop-frame 1s 1 ease-in-out;
+          animation: drop-frame 1s 1 ease-in-out;
 }/*# sourceMappingURL=main.css.map */
